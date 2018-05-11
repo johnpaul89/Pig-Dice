@@ -46,3 +46,14 @@ var clearValues = function() {
   $(".player1Name").val("");
   $(".player2Name").val("");
 }
+//User Interface (Front-end Logic)
+
+$(document).ready(function(){
+
+  $("button#start").click(function(event){
+    player1 = new Player(true);
+    player2 = new Player(false);
+    $(".container-fluid").show():
+    $(".container").hide();
+  })
+})
