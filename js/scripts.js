@@ -22,3 +22,27 @@ Player.prototype.rollone = function() {
     this.tempscore += this.roll;
   }
 }
+
+Player.prototype.hold = function() {
+  this.totalscore += this.tempscore;
+  this.tempscore = 0;
+  alert(this.playerName + "Sorry! It's opponent's turn");
+}
+
+Player.prototype.winnerCheckc = function(){
+  if (this.totalscore >= 100) {
+    alert(this.playerName + ",, congrats you won")
+  }
+}
+
+Player.prototype.newGame = function() {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.playerName = "";
+}
+
+var clearValues = function() {
+  $(".player1Name").val("");
+  $(".player2Name").val("");
+}
