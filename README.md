@@ -4,7 +4,7 @@
 ## Description
 Play the Game when the two players type their name, then press on the Start button. On pressing Start click on the Roll button and the dice will roll and your scores will be added on the total side,, the first Player to reach 50 Points will be the winner.
 On pressing Hold the scores it will be the next players turn.
-On rolling the dice and getting one your scores will not be added for that round.
+On rolling the dice and getting one, your scores will not be added for that round.
 ## Setup of the Pig Dice Game.
 * Open your browser like Chrome.
 * Make sure you are connected to the internet.
