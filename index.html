@@ -8,6 +8,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+
     <h1>Pig Dice Game</h1>
     <div class="container">
       <div class="row">
@@ -16,45 +17,47 @@
         <form id="player-1">
           <div class="form-group">
             <label for="player1Name">Name:</label>
-            <input type="text" class="playerName form-control" required="">
-
+            <input type="text" class="player1Name form-control" required="">
           </div>
         </form>
       </div>
+
       <div class="col-md-6">
         <h4 class="player2">Player 2</h4>
         <form id="player-2">
         <div class="form-group">
           <label for="player2Name">Name:</label>
-          <input type="text" class="player2Name" required="">
+          <input type="text" class="player2Name form-control" required="">
         </div>
       </form>
       <button class="btn-info btn" id="start">Start</button>
-
       </div>
      </div>
     </div>
+
     <div class="container-fluid">
       <div class="row">
-        <div class="player1 col-md-6">
-          <h2>Player 1: <span id="player1Name"></span> </h2>
+        <div class="player1 col-md-5">
+          <h2> <span id="player1Name"></span> </h2>
           <button id="player1-roll" class="btn-success btn">Roll</button>
-          <button id="player1-hold" clas="btn-success btn">Hold</button>
-          <h2>Dice Roll: <span id="die-roll-1"></span> </h2>
-          <p>Round Total: <span id="round-total-1"></span> </p>
+          <button id="player1-hold" class="btn-success btn">Hold</button>
+          <h2>Dice Output: <span id="die-roll-1"></span> </h2>
+          <h3>Total: <span id="round-total-1"></span> </h3>
         </div>
 
-      <div class="player2 col-md-6">
-        <h2>Player 2: <span id="player2Name"></span> </h2>
-        <button id="player2-roll" class="btn-success">Roll</button>
-        <button type="player2-hold" class="btn-success">Hold</button>
-        <h2>Dice Roll: <span id="die-roll-2"></span> </h2>
-        <p>Round Total: <span  id="round-total-2"></span> </p>
+        <div class="here col-md-2">  </div>
+
+      <div class="player2 col-md-5">
+        <h2><span id="player2Name"></span> </h2>
+        <button id="player2-roll" class="btn-success btn">Roll</button>
+        <button type="player2-hold" class="btn-success btn">Hold</button>
+        <h2>Dice Output: <span id="die-roll-2"></span> </h2>
+        <h3>Total: <span  id="round-total-2"></span> </h3><hr>
       </div>
     </div>
     <br><br>
 
-    <button id="new-game" class="btn-success btn"Next></button>
+    <button id="new-game" class="btn-success btn"Next>New Game</button>
     </div>
 
 
