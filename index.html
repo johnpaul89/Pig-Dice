@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Pig Dice</title>
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -12,7 +13,7 @@
     <h1>Pig Dice Game</h1>
     <div class="container">
       <div class="row">
-      <div class="col-md-6">
+      <div class="col-xs-6 ">
         <h4 class="player1">Player 1</h4>
         <form id="player-1">
           <div class="form-group">
@@ -22,7 +23,7 @@
         </form>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-xs-6 ">
         <h4 class="player2">Player 2</h4>
         <form id="player-2">
         <div class="form-group">
@@ -37,17 +38,19 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="player1 col-md-5">
+        <div class="player1 a col-xs-6 ">
+          <hr>
           <h2> <span id="player1Name"></span> </h2>
           <button id="player1-roll" class="btn-success btn">Roll</button>
           <button id="player1-hold" class="btn-success btn">Hold</button>
           <h2>Dice Output: <span id="die-roll-1"></span> </h2>
           <h3>Total: <span id="round-total-1"></span> </h3>
+          <hr>
         </div>
 
-        <div class="here col-md-2">  </div>
 
-      <div class="player2 col-md-5">
+      <div class="player2 b col-xs-6 ">
+        <hr>
         <h2><span id="player2Name"></span> </h2>
         <button id="player2-roll" class="btn-success btn">Roll</button>
         <button type="player2-hold" class="btn-success btn">Hold</button>
@@ -57,7 +60,9 @@
     </div>
     <br><br>
 
+    <div class="new-game">
     <button id="new-game" class="btn-success btn"Next>New Game</button>
+    </div>
     </div>
 
 
