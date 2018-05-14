@@ -1,6 +1,6 @@
 //Business Logic
-var player1 = "";
-var player2 = "";
+var firstplayer = "";
+var secondplayer = "";
 //Mathematics for throwing the dice
 var throwdice = function () {
   return Math.floor(6 * Math.random()) +1;
@@ -45,34 +45,34 @@ Dice.prototype.newGame = function() {
 }
 //After pressing the New Game it empties.
 var clearValues = function() {
-  $(".player1Name").val("");
-  $(".player2Name").val("");
+  $(".firstplayerName").val("");
+  $(".secondplayerName").val("");
 }
 //User Interface (Front-end Logic)
 
 $(document).ready(function(){
 //After clicking start Button,, and the containers to hide to leave space for the game.
   $("button#start").click(function(event){
-    player1 = new Dice(true);
-    player2 = new Dice(false);
+    firstplayer = new Dice(true);
+    secondplayer = new Dice(false);
     $(".container-fluid").show();
     $(".container").hide();
 //collects input Name from Player 1
-    var player1Name = $(".player1Name").val();
-    $("#player1Name").text(player1Name);
+    var firstplayerName = $(".firstplayerName").val();
+    $("#firstplayerName").text(firstplayerName);
 //collects input Name from Player 2
-    var player2Name = $ (".player2Name").val();
-    $("#player2Name").text(player2Name);
+    var secondplayerName = $ (".secondplayerName").val();
+    $("#secondplayerName").text(secondplayerName);
 //adding the names to the Game.
-    player1.playerName = player1Name;
-    player2.playerName = player2Name;
+    firstplayer.playerName = firstplayerName;
+    secondplayer.playerName = secondplayerName;
   });
 //On clicking the new game button it empties everything.
   $("button#new-game").click(function(event){
     $(".container-fluid").hide();
     clearValues();
-    player1.newGame();
-    player2.newGame();
+    firstplayer.newGame();
+    secondplayer.newGame();
     $("#round-total-1").empty();
     $("#total-score-1").empty();
     $("#round-total-2").empty();
@@ -80,30 +80,30 @@ $(document).ready(function(){
 
     $(".container").show();
   });
-//player1 throws the dice
-  $("button#player1-roll").click(function(event){
-    player1.roll = throwdice();
-    $("#die-roll-1").text(player1.roll);
-    player1.rollone();
-    $("#round-total-1").text(player1.initial);
+//firstplayer throws the dice
+  $("button#firstplayer-roll").click(function(event){
+    firstplayer.roll = throwdice();
+    $("#die-roll-1").text(firstplayer.roll);
+    firstplayer.rollone();
+    $("#round-total-1").text(firstplayer.initial);
   });
-//player2 throws the dice.
-  $("button#player2-roll").click(function(event){
-    player2.roll = throwdice ();
-    $("#die-roll-2").text(player2.roll);
-    player2.rollone();$("#round-total-2").text(player2.initial);
+//secondplayer throws the dice.
+  $("button#secondplayer-roll").click(function(event){
+    secondplayer.roll = throwdice ();
+    $("#die-roll-2").text(secondplayer.roll);
+    secondplayer.rollone();$("#round-total-2").text(secondplayer.initial);
   });
-//player1clicks the hold button
-  $("button#player1-hold").click(function(event){
-    player1.hold();
-    $("total-score-1").text(player1.final);
+//firstplayerclicks the hold button
+  $("button#firstplayer-hold").click(function(event){
+    firstplayer.hold();
+    $("total-score-1").text(firstplayer.final);
     $("#round-total-1").empty();
     $("#die-roll-1").empty();
   });
-//player2 clicks the hold button.
-  $("button#player2-hold").click(function(event){
-    player2.hold();
-    $("total-score-2").text(player2.final);
+//secondplayer clicks the hold button.
+  $("button#secondplayer-hold").click(function(event){
+    secondplayer.hold();
+    $("total-score-2").text(secondplayer.final);
     $("round-total-2").empty();
     $("#die-roll-2").empty();
   });

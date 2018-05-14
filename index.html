@@ -14,21 +14,21 @@
     <div class="container">
       <div class="row">
       <div class="col-sm-6 ">
-        <h4 class="player1">Player 1</h4>
+        <h4 class="firstplayer">Player 1</h4>
         <form id="player-1">
           <div class="form-group">
-            <label for="player1Name">Name:</label>
-            <input type="text" class="player1Name form-control" required="">
+            <label for="firstplayerName">Name:</label>
+            <input type="text" class="firstplayerName form-control" required="">
           </div>
         </form>
       </div>
 
       <div class="col-sm-6 ">
-        <h4 class="player2">Player 2</h4>
+        <h4 class="secondplayer">Player 2</h4>
         <form id="player-2">
         <div class="form-group">
-          <label for="player2Name">Name:</label>
-          <input type="text" class="player2Name form-control" required="">
+          <label for="secondplayerName">Name:</label>
+          <input type="text" class="secondplayerName form-control" required="">
         </div>
       </form>
       <button class="btn-info btn" id="start">Start</button>
@@ -38,22 +38,22 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="player1 a col-sm-6 ">
+        <div class="firstplayer a col-sm-6 ">
           <hr>
-          <h2> <span id="player1Name"></span> </h2>
-          <button id="player1-roll" class="btn-success btn">Roll</button>
-          <button id="player1-hold" class="btn-success btn">Hold</button>
+          <h2> <span id="firstplayerName"></span> </h2>
+          <button id="firstplayer-roll" class="btn-success btn">Roll</button>
+          <button id="firstplayer-hold" class="btn-success btn">Hold</button>
           <h2>Dice Output: <span id="die-roll-1"></span> </h2>
           <h3>Total: <span id="round-total-1"></span> </h3>
           <hr>
         </div>
 
 
-      <div class="player2 b col-sm-6 ">
+      <div class="secondplayer b col-sm-6 ">
         <hr>
-        <h2><span id="player2Name"></span> </h2>
-        <button id="player2-roll" class="btn-success btn">Roll</button>
-        <button type="player2-hold" class="btn-success btn">Hold</button>
+        <h2><span id="secondplayerName"></span> </h2>
+        <button id="secondplayer-roll" class="btn-success btn">Roll</button>
+        <button type="secondplayer-hold" class="btn-success btn">Hold</button>
         <h2>Dice Output: <span id="die-roll-2"></span> </h2>
         <h3>Total: <span  id="round-total-2"></span> </h3><hr>
       </div>
