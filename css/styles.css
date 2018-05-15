@@ -1,41 +1,50 @@
 h1{
   text-align: center;
 }
+
 .container{
   padding-top: 20px;
   padding-bottom: 20px;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1WA_rOLqkdmwQ-ti8UThY6H_7a_uAV-lk5Z1QVr7MbqT3WJwkA);
 }
+
 .firstplayer{
   text-align: center;
 }
-.player2{
+
+.secondplayer{
   text-align: center;
 }
+
 .btn{
   background-color: darkred;
 }
+
 #start{
   background-color: blue;
 }
+
 #new-game{
   background-color: green;
 }
+
 .new-game{
   text-align: center;
 }
+
 .a{
   background-color: greenyellow;
 }
+
 .b{
   background-color: yellowgreen;
 }
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: darkred;
+
+footer
+{
+    clear: both;
+    height: 100px;
+    background: darkred;
+    margin-top: -20px;
     color: white;
-    text-align: center;
 }
