@@ -115,7 +115,7 @@ $(document).ready(function(){
     $("total-score-1").text(firstplayer.final);
     $("#round-total-1").empty();
     $("#die-roll-1").empty();
-
+  });
   
 //secondplayer clicks the hold button.
   $("button#secondplayer-hold").click(function(event){

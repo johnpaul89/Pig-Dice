@@ -8,7 +8,7 @@ h1{
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1WA_rOLqkdmwQ-ti8UThY6H_7a_uAV-lk5Z1QVr7MbqT3WJwkA);
 }
 
-.firstplayer{
+.Player1{
   text-align: center;
 }
 
@@ -47,4 +47,5 @@ footer
     background: darkred;
     margin-top: -20px;
     color: white;
+    text-align: center;
 }
